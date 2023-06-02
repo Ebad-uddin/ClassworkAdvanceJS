@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Constructor function </title>
+</head>
+<body>
+
+<script>
+
+// let obj =  {
+// fname : "Ebad",
+// lname : "UDdin",
+// age : 33,
+// address : {
+//     paddress : "karachi",
+//     Taddress : "India"
+// }
+// }
+// console.log(obj.address.paddress)
+
+// constructor function ES5 ECMAScript-5
+
+
+// function students (fname, lname, age, classs) {
+// this.FirstName = fname,
+// // this.LastName = lname,
+// // this.Age = age,
+// // this.Classs = classs
+// // }
+
+// // let stdInfo1 = new students("Ali", "Ahmed", 44, "JS");
+// // stdInfo1.skills = "HTML"
+// // let stdInfo2 = new students("Ebad", "Uddin", 26, "Python");
+// // let stdInfo3 = new students("Saad", "Urrehman", 22, "Python");
+// // console.log(stdInfo1, stdInfo2, stdInfo3)
+// // console.log(stdInfo2)
+
+
+// //ECMAScript-6 Classes
+
+// // let Company = []
+
+// // class Employee {
+// //     constructor (fname, lname, age){
+// //     this.fname = fname,
+// //     this.lname = lname,
+// //     this.age = age
+// //     this.MarkAttendance = []
+// // }
+
+// // message () {
+// // this.MarkAttendance.push(new Date);
+// // }
+
+
+// // static anotherMsg() {
+// //     console.log("sorry the parient is no more");
+// // }
+
+
+
+// // }
+// // let employee = new Employee("imran", "bukhari", 77)
+// // Company.push(employee);
+
+
+// // employee.skills = "Css";
+// // employee.message()
+// // Employee.anotherMsg()
+// //  console.log(employee)
+// //  console.log(Company)
+
+
+// class Aptech {
+//     constructor (){
+//     this.fname = "Aptech",
+//     this.lname = "institute",
+//     this.age = 33
+ 
+// }
+// }
+
+// class facultyMember extends Aptech {
+//     constructor(fname, lname, age, Designation){
+//         super(fname, lname, age)
+//         this.Designation = "faculty";
+//     }
+
+// }
+
+// // let aptech = new Aptech("AptechLearning", "Institute", 20)
+// let faculty = new facultyMember ()
+// console.log(faculty)
+// console.log(faculty instanceof Aptech)
+
+// console.log(aptech)
+
+
+
+//objects
+
+//property = key value pairs in objects
+
+// name : "Umer"
+
+// let car = {
+//     name : "civic",
+//     model : 2022,
+//     cc : 1800,
+//     color : "white",
+//     make : "Honda"
+// }
+
+// for(let i in car){
+//     console.log(i + ":" + car[i])
+// }
+
+
+// console.log("Name :" + car.name + "Model :" +  " " + car.model + "CC :" +  " " + car.cc + "Color :" +  " "  + car.color + "Make :" +  " " + car.make);
+
+
+
+// function vehicle(make, model, color, name){
+// this.Make = make,
+// this.Model = model,
+// this.Color = color,
+// this.Name = name
+
+// }
+
+// let accord = new vehicle("Honda", "2022", "Black", "Accord");
+// let civic = new vehicle("Honda", "2022", "white", "Civic");
+// let city = new vehicle("Honda", "2022", "greyGunMettalic", "City");
+// console.log(accord, civic, city);
+// console.log(civic)
+
+class Vehicle{
+    constructor(make, model, color, name){
+        this.Make = make,
+        this.Model = model,
+        this.Color = color,
+        this.Name = name
+    }
+
+    truck(cc, Price, name){
+this.cc = cc,
+this.Price = Price,
+this.name = name
+    }
+
+
+
+
+}
+
+// let vehicle = new Vehicle("Honda", "2022", "white", "Civic")
+// vehicle.truck("2500", 2600000, "shezor")
+// console.log(vehicle)
+
+
+
+class Students{
+    constructor(fname, lname, age, id){
+        this.FirstName = fname,
+        this.LastName = lname,
+        this.Age = age,
+        this.Id = id
+        this.attendnce = [];
+    }
+
+        Attendance(){
+            this.attendnce.push(new Date());
+        }
+
+}
+
+class TopperStudents extends Students{
+    constructor(fname, lname, age, id){
+        super(fname, lname, age, id)
+    }
+
+}
+let Topper = new TopperStudents("Asad", "Afzal", 19, 44);
+Topper.Skills = "HTML CSS JS"
+Topper.Attendance()
+console.log(Topper) 
+
+let std1 = new Students("youusf", "Amir", 17, 01);
+std1.Attendance()
+console.log(std1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+    
+</body>
+</html>
